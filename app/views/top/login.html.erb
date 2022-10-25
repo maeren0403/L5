@@ -1,0 +1,17 @@
+<%= link_to 'ツイートページ', tweets_path %><br>
+
+<%= form_tag top_login_path, method: :post do %>
+   <p>
+       <%= label_tag :uid, 'ユーザーID' %>
+       <%= text_field_tag :uid %>
+   </p>
+    <p>
+        <%= label_tag :pass, 'パスワード' %>
+       <%= password_field_tag :pass %>
+   </p>
+   <%= submit_tag 'ログイン' %>
+   
+   
+  <%= link_to 'ユーザー追加', new_user_path %>
+<% end %>
+

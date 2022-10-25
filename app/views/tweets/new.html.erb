@@ -1,0 +1,7 @@
+<%= form_for @tweets, action: :create do |f| %>
+  <%= f.label :message, 'メッセージ' %>
+  <%= f.text_field :message %>
+  <%= f.submit 'ツイート' %>
+<% end %>
+
+<%= link_to 'ログアウト', top_logout_path %>
